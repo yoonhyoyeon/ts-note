@@ -9,7 +9,7 @@ interface User {
     age: number;
     gender?: string;
     readonly birthYear: number;
-    [grade:number] : Score;
+    [grade:number] : Score; // indexable Type (선택적 프로퍼티 처럼 반드시 선언 안해줘도 된다.)
 }
 
 let user:User = {
