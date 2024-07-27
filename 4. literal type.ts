@@ -1,3 +1,6 @@
+/* 리터럴, 유니온 타입(literal, union type) */
+
+
 const userName1 = "Bob"; // 문자열 리터럴 타입
 let userName2: string | number = "Tom";
 
