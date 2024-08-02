@@ -7,7 +7,7 @@ type Score = 'A' | 'B' | 'C' | 'F';
 interface User {
     name: string;
     age: number;
-    gender?: string;
+    gender?: string;// 선택적 프로퍼티(Optional Properties)
     readonly birthYear: number;
     [grade:number] : Score; // indexable Type (선택적 프로퍼티 처럼 반드시 선언 안해줘도 된다.)
 }

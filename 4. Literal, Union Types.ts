@@ -1,12 +1,13 @@
 /* 리터럴, 유니온 타입(literal, union type) */
-
+//리터럴 타입: TypeScript에 문자열이나 숫자에 정확한 값을 지정하여 더 엄격한 타입을 지정하는 것.
+//유니온 타입: 자바스크립트의 OR 연산자(||)와 같이 'A' 이거나 'B'이다 라는 의미의 타입이다.
 
 const userName1 = "Bob"; // 문자열 리터럴 타입
 let userName2: string | number = "Tom";
 
 userName2 = 3;
 
-type Job = "police" | "developer" | "teacher"; // -> |(OR)은 유니온 타입
+type Job = "police" | "developer" | "teacher" | number; // -> |(OR)은 유니온 타입
 
 interface User {
     name: string;
